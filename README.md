@@ -4,7 +4,7 @@ Clothing app based on various seasons
 
 **Introduction**
 
-Clothing App is a database of clothing items where a user can select, update and remove the clothing items based on his/her choice.
+Clothing App is a database of clothing items where a user can select,create, update and remove the clothing items based on his/her choice.
 
 **ERD**
 
