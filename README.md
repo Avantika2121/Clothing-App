@@ -22,3 +22,22 @@ https://lucid.app/lucidchart/8fcb9860-b388-4bec-87c3-3af000f08b82/edit?page=0_0&
 5. As a User, I should be able to create a category.
 6. As a User, I should be able to get all categories.
 7. As a User, I should be able to delete a category and all items within it.
+
+
+**END POINTS**
+
+**Method	Endpoints	Description
+GET	 api/items returns JSON all items
+
+**POST	api/items	creates new item
+
+**GET	api/items/{itemID}	returns JSON for all items
+
+**PUT	api/books/{itemID}	updates specific item
+**
+DELETE	api/items/{itemID}	deletes specific item
+
+**GET	api/categories	returns JSON of all categories
+**
+POST	api/categories	creates new category
+******
