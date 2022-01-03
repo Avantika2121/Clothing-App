@@ -31,7 +31,7 @@ Method/Endpoints/Description
 
 2. POST	api/items	creates new item
 
-3. GET	api/items/{itemID}	returns JSON for all items
+3. GET	api/items/{itemID}	returns JSON for an item
 
 4. PUT	api/books/{itemID}	updates specific item
 
