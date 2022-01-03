@@ -26,18 +26,18 @@ https://lucid.app/lucidchart/8fcb9860-b388-4bec-87c3-3af000f08b82/edit?page=0_0&
 
 **END POINTS**
 
-**Method	Endpoints	Description
-GET	 api/items returns JSON all items
+Method/Endpoints/Description
+1. GET	 api/items returns JSON all items
 
-**POST	api/items	creates new item
+2. POST	api/items	creates new item
 
-**GET	api/items/{itemID}	returns JSON for all items
+3. GET	api/items/{itemID}	returns JSON for all items
 
-**PUT	api/books/{itemID}	updates specific item
-**
-DELETE	api/items/{itemID}	deletes specific item
+4. PUT	api/books/{itemID}	updates specific item
 
-**GET	api/categories	returns JSON of all categories
-**
-POST	api/categories	creates new category
+5. DELETE	api/items/{itemID}	deletes specific item
+
+6. GET	api/categories	returns JSON of all categories
+
+7. POST	api/categories	creates new category
 ******
