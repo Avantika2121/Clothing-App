@@ -44,16 +44,18 @@ on his/her choice.
 
 **USER END POINTS**
 
-|     Method    |   Endpoints                   | Detail                           |
-| ------------- | ----------------------        |--------------------------------- | 
-|       GET     | api/items                     | returns JSON all items           |
-|       POST    | api/items                     | creates new item                 |
-|       GET     | api/items/{itemID}            | returns JSON for an item         |
-|       PUT     | api/books/{itemID}            | updates specific item            |
-|      DELETE   | api/items/{itemID}            | deletes specific item            |
-|       GET     | api/categories                | returns JSON of all categories   |	
-|      POST     | api/categories                | creates new category             |
-|      PUT      | api/categories/{categoryID}   | updates specific category        |		
-|      GET      | api/gender                    | returns gender and items within  |
-|      POST     | api/gender                    | creates gender                   |
+|     Method    |   Endpoints                                   | Detail                           |
+| ------------- | -----------------------------------           |--------------------------------- | 
+|       GET     | api/categories/{categoryId}/items             | returns JSON all items           |
+|       POST    | api/categories/{categoryId}/items             | creates new item                 |
+|       GET     | api/categories/{categoryId}/items/{itemId}    | returns JSON for an item         |
+|       PUT     | api/item/{itemID}                             | updates specific item            |
+|      DELETE   | api/items/{itemID}                            | deletes specific item            |
+|       GET     | api/categories                                | returns JSON of all categories   |	
+|       GET     | api/categories/{categoryId}                   | updates a specific category      |
+|      POST     | api/categories/                               | creates new category             |
+|      PUT      | api/categories/{categoryID}                   | updates specific category        |
+|      DELETE   | api/categories/{categoryId}                   | deletes specific category        |
+|      GET      | api/gender                                    | returns gender and items within  |
+|      POST     | api/gender                                    | creates gender                   |
 ******
