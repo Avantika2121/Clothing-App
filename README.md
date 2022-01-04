@@ -49,7 +49,7 @@ on his/her choice.
 |       GET     | api/items                     | returns JSON all items           |
 |       POST    | api/items                     | creates new item                 |
 |       GET     | api/items/{itemID}            | returns JSON for an item         |
-|       PUT     | api/books/{itemID}            | updates specific item            |
+|       PUT     | api/item/{itemID}             | updates specific item            |
 |      DELETE   | api/items/{itemID}            | deletes specific item            |
 |       GET     | api/categories                | returns JSON of all categories   |	
 |      POST     | api/categories                | creates new category             |
