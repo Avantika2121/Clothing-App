@@ -24,6 +24,7 @@ public class ItemService {
         this.itemRepository = itemRepository;
     }
 
+    // DIRECT ITEM CRUD
     //.../items   == Get all items regardless of Cat, Gender, or Season
     public List<Item> getItemList() {
         LOGGER.info("calling getItemList from ItemService");
