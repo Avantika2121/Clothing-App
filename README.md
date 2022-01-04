@@ -8,10 +8,12 @@ Clothing App is a database of clothing items where a user can select, create, up
 on his/her choice.
 
 **ERD**
+
+
 ![image](https://user-images.githubusercontent.com/94148009/148087537-bbdbe690-b8e9-4ab9-96be-272948c2afd5.png)
 
 
-**User Stories**
+****User Stories****
 
 **Item Model**
 
@@ -45,11 +47,13 @@ on his/her choice.
 |     Method    |   Endpoints                   | Detail                           |
 | ------------- | ----------------------        |--------------------------------- | 
 |       GET     | api/items                     | returns JSON all items           |
-|       POST    | api/items              | creates new item                 |
-|       GET     | api/items/{itemID}     | returns JSON for an item         |
-|       PUT     | api/books/{itemID}     | updates specific item            |
-|      DELETE   | api/items/{itemID}     | deletes specific item            |
-|       GET     | api/categories         | returns JSON of all categories   |	
-|      POST     | api/categories         | creates new category             |
-|      PUT      | api/categories/{itemID}   | updates specific item            |		
+|       POST    | api/items                     | creates new item                 |
+|       GET     | api/items/{itemID}            | returns JSON for an item         |
+|       PUT     | api/books/{itemID}            | updates specific item            |
+|      DELETE   | api/items/{itemID}            | deletes specific item            |
+|       GET     | api/categories                | returns JSON of all categories   |	
+|      POST     | api/categories                | creates new category             |
+|      PUT      | api/categories/{categoryID}   | updates specific category        |		
+|      GET      | api/gender                    | returns gender and items within  |
+|      POST     | api/gender                    | creates gender                   |
 ******
