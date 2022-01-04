@@ -42,25 +42,14 @@ on his/her choice.
 
 **USER END POINTS**
 
-|     Method    |   Endpoints            | Detail                 |
-| ------------- | ------------------     |----------------------- | 
-|       GET     | api/items              | returns JSON all items |
-|       POST    | api/items              | creates new item       |
-|       GET     | api/items/{itemID}     | returns JSON all items |
-|       POST    | api/items              | creates new item       |
-|       GET     | api/items              | returns JSON all items |
-|       POST    | api/items              | creates new item       |	
-|       GET     | api/items              | returns JSON all items |
-|       POST    | api/items              | creates new item       |
-
-
-3. 		returns JSON for an item
-
-4. PUT	api/books/{itemID}	updates specific item
-
-5. DELETE	api/items/{itemID}	deletes specific item
-
-6. GET	api/categories	returns JSON of all categories
-
-7. POST	api/categories	creates new category
+|     Method    |   Endpoints            | Detail                           |
+| ------------- | ---------------------- |--------------------------------- | 
+|       GET     | api/items              | returns JSON all items           |
+|       POST    | api/items              | creates new item                 |
+|       GET     | api/items/{itemID}     | returns JSON for an item         |
+|       PUT     | api/books/{itemID}     | updates specific item            |
+|      DELETE   | api/items/{itemID}     | deletes specific item            |
+|       GET     | api/categories         | returns JSON of all categories   |	
+|      POST     | api/categories         | creates new category             |
+		
 ******
