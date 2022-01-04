@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15ddfe6-aed7-402d-8cad-a014114cca04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/exception/InformationExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/exception/InformationNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Seasons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Seasons.java" afterDir="false" />
 
+>>>>>>> fb00bf90d0e3861207d0405aa32965f705bfdbc9
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,8 @@
       <workItem from="1641242786611" duration="35000" />
       <workItem from="1641242842781" duration="1343000" />
       <workItem from="1641314782115" duration="387000" />
-      <workItem from="1641315218466" duration="660000" />
+      <workItem from="1641315218466" duration="1146000" />
+      <workItem from="1641319156492" duration="1249000" />
     </task>
     <servers />
   </component>
