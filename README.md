@@ -52,7 +52,8 @@ on his/her choice.
 |       PUT     | api/item/{itemID}             | updates specific item            |
 |      DELETE   | api/items/{itemID}            | deletes specific item            |
 |       GET     | api/categories                | returns JSON of all categories   |	
-|      POST     | api/categories                | creates new category             |
+|       GET     | api/categories/{categoryId}   | updates a specific category      |
+|      POST     | api/categories/               | creates new category             |
 |      PUT      | api/categories/{categoryID}   | updates specific category        |		
 |      GET      | api/gender                    | returns gender and items within  |
 |      POST     | api/gender                    | creates gender                   |
