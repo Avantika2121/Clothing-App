@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15ddfe6-aed7-402d-8cad-a014114cca04" name="Changes" comment="">
-
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Category.java" afterDir="false" />
+    <list default="true" id="00510c42-b96d-4647-b28d-3afd787c9476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Seasons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Seasons.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -68,11 +69,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641240816502</updated>
-
       <workItem from="1641240819549" duration="1274000" />
       <workItem from="1641242786611" duration="35000" />
       <workItem from="1641242842781" duration="1343000" />
-
     </task>
     <servers />
   </component>

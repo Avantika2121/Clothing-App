@@ -1,15 +1,12 @@
 package com.clothingapp.clothingapp.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "seasons")
-public class Seasons {
+@Table(name ="gender")
+public class Gender {
+
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,14 +15,12 @@ public class Seasons {
     @Column
     private String name;
 
-    @OneToMany(mappedBy = "seasons")//This mapps to the name of the column in the other Item class
-    //@JsonIgnore
+    @OneToMany(mappedBy = "gender")
     private List<Item> itemList;
 
-    public Seasons() {
+    public Gender() {
     }
 
-    //Getters and Setters
     public Long getId() {
         return id;
     }
