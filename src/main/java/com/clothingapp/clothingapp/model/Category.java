@@ -1,5 +1,4 @@
 package com.clothingapp.clothingapp.model;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;
@@ -19,16 +18,19 @@ public class Category {
     @Column
     private String description;
 
-    public Category(String description, Long id, String name) {
-        this.description = description;
-        this.id = id;
-        this.name = name;
-    }
+    @OneToMany(mappedBy = "category")
+    private List<Item> itemList;
+
+//    public Category(String description, Long id, String name) {
+//        this.description = description;
+//        this.id = id;
+//        this.name = name;
+//    }
 
     public Category() {
     }
 
-
+    //Getters and Setters
     public Long getId() {
         return id;
     }
@@ -50,10 +52,12 @@ public class Category {
         this.description = description;
     }
 
-
-
-
-
+    public List<Item> getItemList() {
+        return itemList;
+    }
+    public void setItemList(List<Item> itemList) {
+        this.itemList = itemList;
+    }
 }
 
 
