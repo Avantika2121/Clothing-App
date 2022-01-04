@@ -40,12 +40,14 @@ on his/her choice.
 
 
 
-**END POINTS**
+**USER END POINTS**
 
-Method/Endpoints/Description
-1. GET	 api/items returns JSON all items
+|     Method    |   Endpoints   | Detail                 |
+| ------------- | ------------- |----------------------- | 
+|       GET     | api/items     | returns JSON all items |
+|       POST    | api/items     | creates new item       |
 
-2. POST	api/items	creates new item
+	
 
 3. GET	api/items/{itemID}	returns JSON for an item
 
