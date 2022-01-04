@@ -1,5 +1,8 @@
 package com.clothingapp.clothingapp.controller;
 
+import com.clothingapp.clothingapp.model.Category;
+import com.clothingapp.clothingapp.model.Item;
+import com.clothingapp.clothingapp.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +16,8 @@ import java.util.List;
 @RequestMapping(path = "/api")
 public class CategoryController {
 
-   // private CategoryService categoryService;
+
+   private CategoryService categoryService;
    @Autowired
    public void setCategoryService(CategoryService categoryService) {
        this.categoryService = categoryService;
