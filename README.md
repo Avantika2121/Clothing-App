@@ -8,6 +8,8 @@ Clothing App is a database of clothing items where a user can select, create, up
 on his/her choice.
 
 **ERD**
+
+
 ![image](https://user-images.githubusercontent.com/94148009/148087537-bbdbe690-b8e9-4ab9-96be-272948c2afd5.png)
 
 
