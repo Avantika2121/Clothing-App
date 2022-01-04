@@ -15,13 +15,31 @@ https://lucid.app/lucidchart/8fcb9860-b388-4bec-87c3-3af000f08b82/edit?page=0_0&
 
 **User Stories**
 
-1. As a User, I should be able to create an item.
+**Item Model**
+
+1. As a User, I should be able to create an item based on a category, season and gender.
 2. As a User, I should be able to update an item.
-3. As a User, I should be able delete an item
-4. As a User, I should be able to get an item or item based on a category.
-5. As a User, I should be able to create a category.
-6. As a User, I should be able to get all categories.
-7. As a User, I should be able to delete a category and all items within it.
+3. As a User, I should be able delete an item.
+4. As a User, I should be able to get an item or items based on a category.
+
+**Category Model**
+
+1. As a User, I should be able to create a category.
+2. As a User, I should be able to update a category.
+3. As a User, I should be able to get all categories.
+4. As a User, I should be able to delete a category and all items within it.
+
+**Seasons Model**
+
+1. As a User, I should be able to create a season.
+2. As a User, I should be able to delete a season and all the items within it.
+3. As a User, I should be able to get a season all the items within it.
+
+**Gender Model**
+
+1. As a User, I should be able to create male or female gender.
+2. As a User, I should be able to get all items based on the gender.
+
 
 
 **END POINTS**
