@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15ddfe6-aed7-402d-8cad-a014114cca04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/GenderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/repository/GenderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/service/GenderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/TestingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Gender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Seasons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/model/Seasons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/service/CategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

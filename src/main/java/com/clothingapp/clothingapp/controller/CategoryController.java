@@ -54,42 +54,42 @@ public class CategoryController {
         return categoryService.deleteCategory(categoryId);
     }
 
-    @PostMapping("/categories/{categoryId}/items")
-    public Item createCategoryItem(
-            @PathVariable(value = "categoryId") Long categoryId, @RequestBody Item itemObject) {
-        System.out.println("calling createCategoryItem ==>");
-        return categoryService.createCategoryItem(categoryId, itemObject);
-    }
-
-    @GetMapping("/categories/{categoryId}/items")
-    public List<Item> getCategoryItems(@PathVariable(value = "categoryId") Long categoryId) {
-        System.out.println("calling getCategoryItems ==>");
-        return categoryService.getCategoryItems(itemId);
-    }
-
-    @GetMapping("/categories/{categoryId}/items/{itemId}")
-    public Item getCategoryItem(
-            @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
-        System.out.println("calling getCategoryItem ==>");
-        return categoryService.getCategoryItem(categoryId, itemId);
-    }
-
-    @PutMapping("/categories/{categoryId}/items/{itemId}")
-    public Item updateCategoryItem(@PathVariable(value = "categoryId") Long categoryId,
-                                       @PathVariable(value = "itemId") Long itemId,
-                                       @RequestBody Item itemObject) {
-        System.out.println("calling getCategoryItem ==>");
-        return categoryService.updateCategoryItem(categoryId, itemId, itemObject);
-    }
-
-    @DeleteMapping("/categories/{categoryId}/items/{itemId}")
-    public ResponseEntity<HashMap> deleteCategoryItem(
-            @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
-        System.out.println("calling getCategoryItem ==>");
-        categoryService.deleteCategoryItem(categoryId, itemId);
-        HashMap responseMessage = new HashMap();
-        responseMessage.put("status", "item with id: " + itemId + " was successfully deleted.");
-        return new ResponseEntity<HashMap>(responseMessage, HttpStatus.OK);
-    }
+//    @PostMapping("/categories/{categoryId}/items")
+//    public Item createCategoryItem(
+//            @PathVariable(value = "categoryId") Long categoryId, @RequestBody Item itemObject) {
+//        System.out.println("calling createCategoryItem ==>");
+//        return categoryService.createCategoryItem(categoryId, itemObject);
+//    }
+//
+//    @GetMapping("/categories/{categoryId}/items")
+//    public List<Item> getCategoryItems(@PathVariable(value = "categoryId") Long categoryId) {
+//        System.out.println("calling getCategoryItems ==>");
+//        return categoryService.getCategoryItems(itemId);
+//    }
+//
+//    @GetMapping("/categories/{categoryId}/items/{itemId}")
+//    public Item getCategoryItem(
+//            @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
+//        System.out.println("calling getCategoryItem ==>");
+//        return categoryService.getCategoryItem(categoryId, itemId);
+//    }
+//
+//    @PutMapping("/categories/{categoryId}/items/{itemId}")
+//    public Item updateCategoryItem(@PathVariable(value = "categoryId") Long categoryId,
+//                                       @PathVariable(value = "itemId") Long itemId,
+//                                       @RequestBody Item itemObject) {
+//        System.out.println("calling getCategoryItem ==>");
+//        return categoryService.updateCategoryItem(categoryId, itemId, itemObject);
+//    }
+//
+//    @DeleteMapping("/categories/{categoryId}/items/{itemId}")
+//    public ResponseEntity<HashMap> deleteCategoryItem(
+//            @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
+//        System.out.println("calling getCategoryItem ==>");
+//        categoryService.deleteCategoryItem(categoryId, itemId);
+//        HashMap responseMessage = new HashMap();
+//        responseMessage.put("status", "item with id: " + itemId + " was successfully deleted.");
+//        return new ResponseEntity<HashMap>(responseMessage, HttpStatus.OK);
+//    }
 
 }
