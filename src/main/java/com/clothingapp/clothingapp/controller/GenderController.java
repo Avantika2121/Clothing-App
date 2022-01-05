@@ -22,17 +22,22 @@ public class GenderController {
     private static final Logger LOGGER = Logger.getLogger(GenderController.class.getName());
 
     //Return all items under that gender Id
-    @GetMapping("/gender/{genderId}")
+    @GetMapping("/gender/{genderId}/items")
     public List<Item> getGenderItems(@PathVariable Long genderId) {
         LOGGER.info("calling getGenderItems from GenderController");
         return genderService.getGenderItems(genderId);
     }
-
     //Create Gender
     @PostMapping("/gender")
     public Gender createGender(@RequestBody Gender genderObject) {
         LOGGER.info("calling creteGender from GenderController");
         return genderService.createGender(genderObject);
     }
-
+    //Allowing the user to create an item from a specifi gender, facilitating the creating process
+    //by automatically assigning the item to that specific gender
+    @PostMapping("/gender/{genderId}/items")
+    public Item createItemFromGender (@PathVariable Long genderId, @RequestBody Item itemObject) {
+        LOGGER.info("calling createItemFromGender from GenderController");
+        return genderService.createItemFromGender(genderId, itemObject);
+    }
 }
