@@ -1,6 +1,5 @@
 package com.clothingapp.clothingapp.service;
 
-import com.clothingapp.clothingapp.controller.GenderController;
 import com.clothingapp.clothingapp.exception.InformationExistException;
 import com.clothingapp.clothingapp.exception.InformationNotFoundException;
 import com.clothingapp.clothingapp.model.Gender;

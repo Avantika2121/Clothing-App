@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 @RestController
 public class GenderController {
 
-    public GenderService genderService;
+    private GenderService genderService;
 
     @Autowired
     public void setGenderService(GenderService genderService) {
