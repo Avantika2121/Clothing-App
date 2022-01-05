@@ -1,5 +1,7 @@
 package com.clothingapp.clothingapp.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class Category {
     private String description;
 
     @OneToMany(mappedBy = "category")
+    @JsonIgnore
     private List<Item> itemList;
 
 //    public Category(String description, Long id, String name) {

@@ -19,7 +19,7 @@ public class Seasons {
     private String name;
 
     @OneToMany(mappedBy = "seasons")//This maps to the name of the column in the other Item class
-    //@JsonIgnore
+    @JsonIgnore
     private List<Item> itemList;
 
     public Seasons() {
