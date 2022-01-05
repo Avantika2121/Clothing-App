@@ -56,6 +56,14 @@ on his/her choice.
 |      POST     | api/categories/                               | creates new category             |
 |      PUT      | api/categories/{categoryID}                   | updates specific category        |
 |      DELETE   | api/categories/{categoryId}                   | deletes specific category        |
-|      GET      | api/gender                                    | returns gender and items within  |
+|      GET      | api/gender/{genderId}/items                   | returns gender and items within  |
 |      POST     | api/gender                                    | creates gender                   |
+|  ========     | ==============                                | ==============                   |
+|      POST     | api/gender/{genderId}/items                   | creates an item with the specified gender  |
+|      GET      | api/seasons/{seasonsId}/items                 | returns a season and items within|
+|      POST     | api/seasons                                   | creates season                   |
+|      POST     | api/seasons/{seasonsId}/items                 | creates an item with the specified season  |
+|      POST     | api/items                                     | creates an item                  |
+|      GET      | api/items                                     | get all items                    |
+
 ******
