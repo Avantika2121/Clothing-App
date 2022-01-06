@@ -73,14 +73,14 @@ public class CategoryController {
         System.out.println("calling getCategoryItem ==>");
         return categoryService.getCategoryItem(categoryId, itemId);
     }
-//
-//    @PutMapping("/categories/{categoryId}/items/{itemId}")
-//    public Item updateCategoryItem(@PathVariable(value = "categoryId") Long categoryId,
-//                                       @PathVariable(value = "itemId") Long itemId,
-//                                       @RequestBody Item itemObject) {
-//        System.out.println("calling getCategoryItem ==>");
-//        return categoryService.updateCategoryItem(categoryId, itemId, itemObject);
-//    }
+
+    @PutMapping("/categories/{categoryId}/items/{itemId}")
+    public Item updateCategoryItem(@PathVariable(value = "categoryId") Long categoryId,
+                                       @PathVariable(value = "itemId") Long itemId,
+                                       @RequestBody Item itemObject) {
+        System.out.println("calling getCategoryItem ==>");
+        return categoryService.updateCategoryItem(categoryId, itemId, itemObject);
+    }
 //
 //    @DeleteMapping("/categories/{categoryId}/items/{itemId}")
 //    public ResponseEntity<HashMap> deleteCategoryItem(
