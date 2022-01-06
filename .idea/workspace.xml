@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15ddfe6-aed7-402d-8cad-a014114cca04" name="Changes" comment="" />
+    <list default="true" id="c15ddfe6-aed7-402d-8cad-a014114cca04" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clothingapp/clothingapp/service/CategoryService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +84,7 @@
       <workItem from="1641314782115" duration="387000" />
       <workItem from="1641315218466" duration="1146000" />
       <workItem from="1641319156492" duration="1249000" />
+      <workItem from="1641500801932" duration="4013000" />
     </task>
     <servers />
   </component>
