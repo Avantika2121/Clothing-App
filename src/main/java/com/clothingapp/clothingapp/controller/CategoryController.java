@@ -66,13 +66,13 @@ public class CategoryController {
         System.out.println("calling getCategoryItems ==>");
         return categoryService.getCategoryItems(categoryId);
     }
-//
-//    @GetMapping("/categories/{categoryId}/items/{itemId}")
-//    public Item getCategoryItem(
-//            @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
-//        System.out.println("calling getCategoryItem ==>");
-//        return categoryService.getCategoryItem(categoryId, itemId);
-//    }
+
+    @GetMapping("/categories/{categoryId}/items/{itemId}")
+    public Item getCategoryItem(
+            @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
+        System.out.println("calling getCategoryItem ==>");
+        return categoryService.getCategoryItem(categoryId, itemId);
+    }
 //
 //    @PutMapping("/categories/{categoryId}/items/{itemId}")
 //    public Item updateCategoryItem(@PathVariable(value = "categoryId") Long categoryId,

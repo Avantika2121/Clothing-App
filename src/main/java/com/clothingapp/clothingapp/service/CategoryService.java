@@ -25,6 +25,7 @@ public class CategoryService {
     public void setCategoryRepository(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
+
     @Autowired
     public void setItemRepository(ItemRepository itemRepository) {
         this.itemRepository = itemRepository;
@@ -35,16 +36,18 @@ public class CategoryService {
         LOGGER.info("calling createCategory from CategoryService");
         Optional<Category> category = categoryRepository.findByName(categoryObject.getName());
         if (category.isPresent()) {
-            throw new InformationExistException("category with name " +categoryObject.getName() +" already exists");
+            throw new InformationExistException("category with name " + categoryObject.getName() + " already exists");
         } else {
             return categoryRepository.save(categoryObject);
         }
     }
+
     //.../categories == Get all categories
     public List<Category> getCategories() {
         LOGGER.info("calling getCategories from CategoryService");
         return categoryRepository.findAll();
     }
+
     //.../category/{categoryId} == Get a category by Id
     public Category getCategory(Long categoryId) {
         LOGGER.info("calling getCategory from CategoryService");
@@ -52,9 +55,10 @@ public class CategoryService {
         if (category.isPresent()) {
             return category.get();
         } else {
-            throw new InformationNotFoundException("category with Id of "+ categoryId + " was not found");
+            throw new InformationNotFoundException("category with Id of " + categoryId + " was not found");
         }
     }
+
     //.../category/{categoryId} == Delete a category by Id
     public String deleteCategory(Long categoryId) {
         LOGGER.info("calling deleteCAtegory from CategoryService");
@@ -63,21 +67,23 @@ public class CategoryService {
             categoryRepository.deleteById(categoryId);
             return "Category with id of " + categoryId + " has been deleted";
         } else {
-            throw new InformationNotFoundException("category with id of "+ categoryId+ " was not found");
+            throw new InformationNotFoundException("category with id of " + categoryId + " was not found");
         }
     }
+
     //.../category/{categoryId} == Update an existing category
     public Category updateCategory(Long categoryId, Category categoryObject) {
         LOGGER.info("calling updateCategory from CategoryService");
         Optional<Category> category = categoryRepository.findById(categoryId);
         if (category.isPresent()) {
-        category.get().setName(categoryObject.getName());
-        category.get().setDescription(categoryObject.getDescription());
-        return categoryRepository.save(category.get());
+            category.get().setName(categoryObject.getName());
+            category.get().setDescription(categoryObject.getDescription());
+            return categoryRepository.save(category.get());
         } else {
-            throw new InformationNotFoundException("category with id of "+ categoryId + "does not exists");
+            throw new InformationNotFoundException("category with id of " + categoryId + "does not exists");
         }
     }
+
     //.../category/{categoryId}/items  == Get all items within that category
     public List<Item> getCategoryItems(Long categoryId) {
         LOGGER.info("calling getCategoryItems from CategoryService");
@@ -85,9 +91,10 @@ public class CategoryService {
         if (category.isPresent()) {
             return category.get().getItemList();
         } else {
-            throw new InformationNotFoundException("category with id of "+ categoryId + " was not found");
+            throw new InformationNotFoundException("category with id of " + categoryId + " was not found");
         }
     }
+
     //.../category/{categoryId}/items == Create an item from a category
     public Item createItemFromCategory(Long categoryId, Item itemObject) {
         LOGGER.info("calling createItemFromCategory from CategoryService");
@@ -103,5 +110,21 @@ public class CategoryService {
         } else {
             throw new InformationNotFoundException("category with Id of " + categoryId + "does not exists");
         }
+    }
+
+    public Item getCategoryItem(Long categoryId, Long itemId) {
+        LOGGER.info("calling getCategoryItem from CategoryService");
+        Optional<Category> category = categoryRepository.findById(categoryId);
+        if (category == null) {
+            throw new InformationNotFoundException("category with id " + categoryId +
+                    " not found");
+        }
+        Optional<Item> item = itemRepository.findById(
+                categoryId).stream().filter(p -> p.getId().equals(itemId)).findFirst();
+        if (!item.isPresent()) {
+            throw new InformationNotFoundException("item with id " + itemId +
+                    " does not exist");
+        }
+        return item.get();
     }
 }
