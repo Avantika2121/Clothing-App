@@ -151,5 +151,22 @@ public class CategoryService {
 
         return itemRepository.save(item.get());
     }
+    public Item deleteCategoryItem(Long categoryId, Long itemId) {
+
+        Optional category = categoryRepository.findById(categoryId);
+        if (category == null) {
+            throw new InformationNotFoundException("category with id " + categoryId +
+                    "does not exist");
+        }
+        Optional<Item> item = itemRepository.findById(
+                categoryId).stream().filter(p -> p.getId().equals(itemId)).findFirst();
+        if (!item.isPresent()) {
+            throw new InformationNotFoundException("item with id " + itemId +
+                    "does not exist");
+        }
+        itemRepository.deleteById(item.get().getId());
+        return null;
+    }
+
 
 }
