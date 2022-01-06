@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
+@RequestMapping("/api")
 public class ItemController {
 
     private static final Logger LOGGER = Logger.getLogger(ItemController.class.getName());

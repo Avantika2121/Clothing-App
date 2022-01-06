@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
+@RequestMapping("/api")
 public class GenderController {
 
     private GenderService genderService;

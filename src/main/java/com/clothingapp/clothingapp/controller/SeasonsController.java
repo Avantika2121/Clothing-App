@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
+@RequestMapping("/api")
 public class SeasonsController {
 
     private static final Logger LOGGER = Logger.getLogger(SeasonsController.class.getName());

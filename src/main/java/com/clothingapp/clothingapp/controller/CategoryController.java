@@ -35,7 +35,7 @@ public class CategoryController {
         return categoryService.getCategory(categoryId);
     }
 
-    @PostMapping("/categories/")
+    @PostMapping("/categories")
     public Category createCategory(@RequestBody Category categoryObject) {
         System.out.println("calling createCategory ==>");
         return categoryService.createCategory(categoryObject);
@@ -54,18 +54,18 @@ public class CategoryController {
         return categoryService.deleteCategory(categoryId);
     }
 
-//    @PostMapping("/categories/{categoryId}/items")
-//    public Item createCategoryItem(
-//            @PathVariable(value = "categoryId") Long categoryId, @RequestBody Item itemObject) {
-//        System.out.println("calling createCategoryItem ==>");
-//        return categoryService.createCategoryItem(categoryId, itemObject);
-//    }
-//
-//    @GetMapping("/categories/{categoryId}/items")
-//    public List<Item> getCategoryItems(@PathVariable(value = "categoryId") Long categoryId) {
-//        System.out.println("calling getCategoryItems ==>");
-//        return categoryService.getCategoryItems(itemId);
-//    }
+    @PostMapping("/categories/{categoryId}/items")
+    public Item createCategoryItem(
+            @PathVariable(value = "categoryId") Long categoryId, @RequestBody Item itemObject) {
+        System.out.println("calling createCategoryItem ==>");
+        return categoryService.createItemFromCategory(categoryId, itemObject);
+    }
+
+    @GetMapping("/categories/{categoryId}/items")
+    public List<Item> getCategoryItems(@PathVariable(value = "categoryId") Long categoryId) {
+        System.out.println("calling getCategoryItems ==>");
+        return categoryService.getCategoryItems(categoryId);
+    }
 //
 //    @GetMapping("/categories/{categoryId}/items/{itemId}")
 //    public Item getCategoryItem(

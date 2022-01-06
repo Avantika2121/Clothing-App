@@ -3,7 +3,9 @@ package com.clothingapp.clothingapp.service;
 import com.clothingapp.clothingapp.exception.InformationExistException;
 import com.clothingapp.clothingapp.exception.InformationNotFoundException;
 import com.clothingapp.clothingapp.model.Category;
+import com.clothingapp.clothingapp.model.Item;
 import com.clothingapp.clothingapp.repository.CategoryRepository;
+import com.clothingapp.clothingapp.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,11 +19,17 @@ public class CategoryService {
     private static final Logger LOGGER = Logger.getLogger(ItemService.class.getName());
 
     private CategoryRepository categoryRepository;
+    private ItemRepository itemRepository;
 
     @Autowired
     public void setCategoryRepository(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
+    @Autowired
+    public void setItemRepository(ItemRepository itemRepository) {
+        this.itemRepository = itemRepository;
+    }
+
     //.../categories == Create a new category
     public Category createCategory(Category categoryObject) {
         LOGGER.info("calling createCategory from CategoryService");
@@ -68,6 +76,32 @@ public class CategoryService {
         return categoryRepository.save(category.get());
         } else {
             throw new InformationNotFoundException("category with id of "+ categoryId + "does not exists");
+        }
+    }
+    //.../category/{categoryId}/items  == Get all items within that category
+    public List<Item> getCategoryItems(Long categoryId) {
+        LOGGER.info("calling getCategoryItems from CategoryService");
+        Optional<Category> category = categoryRepository.findById(categoryId);
+        if (category.isPresent()) {
+            return category.get().getItemList();
+        } else {
+            throw new InformationNotFoundException("category with id of "+ categoryId + " was not found");
+        }
+    }
+    //.../category/{categoryId}/items == Create an item from a category
+    public Item createItemFromCategory(Long categoryId, Item itemObject) {
+        LOGGER.info("calling createItemFromCategory from CategoryService");
+        Optional<Category> category = categoryRepository.findById(categoryId);
+        if (category.isPresent()) {
+            Optional<Item> item = itemRepository.findByName(itemObject.getName());
+            if (item.isPresent()) {
+                throw new InformationExistException("item with name of " + itemObject.getName() + "already exists");
+            } else {
+                itemObject.setCategory(category.get());
+                return itemRepository.save(itemObject);
+            }
+        } else {
+            throw new InformationNotFoundException("category with Id of " + categoryId + "does not exists");
         }
     }
 }
