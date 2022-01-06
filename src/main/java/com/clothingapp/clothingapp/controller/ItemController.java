@@ -26,8 +26,8 @@ public class ItemController {
         LOGGER.info("calling getItem from TestingController");
         return itemService.getItem(itemId);
     }
-    @GetMapping("/items/")
-    public List<Item> getItemList(@PathVariable Long itemId) {
+    @GetMapping("/items")
+    public List<Item> getItemList() {
         LOGGER.info("calling getItem from TestingController");
         return itemService.getItemList();
     }
@@ -45,6 +45,16 @@ public class ItemController {
     public String deleteItem(@PathVariable Long itemId) {
         LOGGER.info("calling getItem from TestingController");
         return itemService.deleteItem(itemId);
+    }
+    //Filtering items by category, gender and seasons
+    @GetMapping("/filter/category/{categoryId}/gender/{genderId}/seasons/{seasonsId}/items")
+    public List<Item> filterByCategoryAndGenderAndSeasons(
+            @PathVariable Long categoryId,
+            @PathVariable Long genderId,
+            @PathVariable Long seasonsId
+    ) {
+        LOGGER.info("calling filterByCategoryAndGenderAndSeasons from ItemController");
+        return itemService.filterByCategoryAndGenderAndSeasons(categoryId, genderId, seasonsId);
     }
 
 }
