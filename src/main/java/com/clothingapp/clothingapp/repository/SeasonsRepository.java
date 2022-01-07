@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface SeasonsRepository extends JpaRepository<Seasons, Long> {
     Optional<Seasons> findByName(String name);
+    Optional<Seasons> findById(Long id);
 }

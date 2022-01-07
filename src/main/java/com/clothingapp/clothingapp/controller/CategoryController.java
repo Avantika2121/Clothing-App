@@ -83,13 +83,10 @@ public class CategoryController {
     }
 
     @DeleteMapping("/categories/{categoryId}/items/{itemId}")
-    public ResponseEntity<HashMap> deleteCategoryItem(
+    public Item deleteCategoryItem(
             @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {
-        System.out.println("calling getCategoryItem ==>");
-        categoryService.deleteCategoryItem(categoryId, itemId);
-        HashMap responseMessage = new HashMap();
-        responseMessage.put("status", "item with id: " + itemId + " was successfully deleted.");
-        return new ResponseEntity<HashMap>(responseMessage, HttpStatus.OK);
+        System.out.println("calling deleteCategoryItem ==>");
+        return categoryService.deleteCategoryItem(categoryId,itemId);
     }
 
 }
