@@ -17,10 +17,12 @@ on his/her choice.
 
 **Item Model**
 
-1. As a User, I should be able to create an item based on a category, season and gender.
-2. As a User, I should be able to update an item.
-3. As a User, I should be able delete an item.
-4. As a User, I should be able to get an item or items based on a category.
+1. As a User, I should be able to create an item and assign a category, season and gender.
+2. As a User, I should be able to get an item based on its Id.
+3. As a User, I should be able to get a list of all items.
+4. As a User, I should be able to update an item.
+5. As a User, I should be able delete an item.
+6. As a User, I should be able to filter item based on its Category, Gender and Season.
 
 **Category Model**
 
@@ -28,17 +30,20 @@ on his/her choice.
 2. As a User, I should be able to update a category.
 3. As a User, I should be able to get all categories.
 4. As a User, I should be able to delete a category and all items within it.
+5. 3. As a user, I should be able to create an item from within a category, automatically assigning the item to that specific category.
 
 **Seasons Model**
 
 1. As a User, I should be able to create a season.
 2. As a User, I should be able to delete a season and all the items within it.
 3. As a User, I should be able to get a season all the items within it.
+4. 3. As a user, I should be able to create an item from within a season, automatically assigning the item to that specific season.
 
 **Gender Model**
 
-1. As a User, I should be able to create male or female gender.
+1. As a User, I should be able to create a gender.
 2. As a User, I should be able to get all items based on the gender.
+3. As a user, I should be able to create an item from within a gender, automatically assigning the item to that specific gender.
 
 
 
@@ -67,3 +72,9 @@ on his/her choice.
 |      GET      | api/items                                     | get all items                    |
 
 ******
+****Technologies Used****
+1. Java
+2. Spring Framework (Data-Rest, Data-JPA, Test)
+3. JUnit
+4. Hamcrest
+5. Git
