@@ -67,6 +67,7 @@ public class CategoryController {
         return categoryService.getCategoryItems(categoryId);
     }
 
+    //Avantika below
     @GetMapping("/categories/{categoryId}/items/{itemId}")
     public Item getCategoryItem(
             @PathVariable(value = "categoryId") Long categoryId, @PathVariable(value = "itemId") Long itemId) {

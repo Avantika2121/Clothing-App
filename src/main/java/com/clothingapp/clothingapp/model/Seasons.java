@@ -25,6 +25,11 @@ public class Seasons {
     public Seasons() {
     }
 
+    //Constructor for Testing purposes
+    public Seasons(String name) {
+        this.name = name;
+    }
+
     //Getters and Setters
     public Long getId() {
         return id;
