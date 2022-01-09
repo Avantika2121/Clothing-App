@@ -112,6 +112,7 @@ public class CategoryService {
         }
     }
 
+    //Avantika below
     public Item getCategoryItem(Long categoryId, Long itemId) {
         LOGGER.info("calling getCategoryItem from CategoryService");
         Optional<Category> category = categoryRepository.findById(categoryId);

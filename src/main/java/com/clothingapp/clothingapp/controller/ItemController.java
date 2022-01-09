@@ -47,7 +47,7 @@ public class ItemController {
         return itemService.deleteItem(itemId);
     }
     //Filtering items by category, gender and seasons
-    @GetMapping("/filter/category/{categoryId}/gender/{genderId}/seasons/{seasonsId}/items")
+    @GetMapping("/filter/categories/{categoryId}/gender/{genderId}/seasons/{seasonsId}/items")
     public List<Item> filterByCategoryAndGenderAndSeasons(
             @PathVariable Long categoryId,
             @PathVariable Long genderId,
