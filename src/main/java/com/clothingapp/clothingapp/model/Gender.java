@@ -24,6 +24,11 @@ public class Gender {
     public Gender() {
     }
 
+    //Constructor for Testing purposes
+    public Gender(String name) {
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

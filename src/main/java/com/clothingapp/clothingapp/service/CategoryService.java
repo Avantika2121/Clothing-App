@@ -112,7 +112,6 @@ public class CategoryService {
         }
     }
 
-    //Getting an item with item and category id
     public Item getCategoryItem(Long categoryId, Long itemId) {
         LOGGER.info("calling getCategoryItem from CategoryService");
         Optional<Category> category = categoryRepository.findById(categoryId);
