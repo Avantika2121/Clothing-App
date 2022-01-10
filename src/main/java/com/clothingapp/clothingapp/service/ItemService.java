@@ -74,5 +74,20 @@ public class ItemService {
             throw new InformationNotFoundException("item with id of " + itemId + " couldn't be found");
         }
     }
+    //.../filter/category/{categoryId}/gender/{genderId}/seasons/{seasonsId}/items
+    public List<Item> filterByCategoryAndGenderAndSeasons(Long categoryId, Long genderId, Long seasonsId){
+        LOGGER.info("calling filterByCategoryAndGenderAndSeasons from ItemService");
+        Optional<List<Item>> itemList = itemRepository.findAllByCategoryIdAndGenderIdAndSeasonsId(
+                categoryId,
+                genderId,
+                seasonsId
+        );
+        if (itemList.isPresent()) {
+            return itemList.get();
+        } else {
+            throw new InformationNotFoundException("info not found, please review that the categoryId, genderId and " +
+                    "seasonsId specified exists in the database");
+        } //There is way more exception handling that can be done here
+    }
 
 }

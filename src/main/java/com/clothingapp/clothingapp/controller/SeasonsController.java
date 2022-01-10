@@ -23,7 +23,7 @@ public class SeasonsController {
     }
 
     //Getting all the items within the category
-    @GetMapping("/seasons/{seasonsId}")
+    @GetMapping("/seasons/{seasonsId}/items")
     public List<Item> getSeasonItems(@PathVariable Long seasonsId) {
         LOGGER.info("calling getSeasonsItem from SeasonsController");
         return seasonsService.getSeasonsItems(seasonsId);
