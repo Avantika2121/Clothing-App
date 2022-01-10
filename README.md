@@ -81,3 +81,17 @@ on his/her choice.
 4. JUnit
 5. Hamcrest
 6. Git
+
+**BONUS**
+
+1) Unit tests added to Service.
+
+**Issues Tackled**
+
+1) Merging issues and handling merge conflicts when they occured.
+2) Gaining experience in Git commands, using SpringFramework and testing in Postman.
+
+
+**Enhancements**
+
+1) Implementing security which looked difficult after code was already implemented. But would definitely want to work on that.
